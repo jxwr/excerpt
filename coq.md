@@ -16,3 +16,6 @@
 * 默认情况下，Definition和Let声明都是透明的，而Theorem和Lemma都是不透明的，透明值其值是否后续可见。
 * 原子命题可以分解为客体和谓词两部分
 * 刻划一个客体性质的词称之为一元谓词,刻划n个客体之间关系的词称之为n元谓词
+* the keywords Example and Theorem (and a few others, including Lemma, Fact, and Remark) mean exactly the same thing to Coq.
+* rewrite后面的箭头表示从哪向哪rewrite
+
