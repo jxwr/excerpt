@@ -7,7 +7,7 @@ connections.  Each callback indicates what I/O they plan next
 (eg. read, write).  It is also possible to write custom I/O
 plans.
 
-### core loop
+### Core Loop
 
 ```
 io_loop polling {
@@ -18,3 +18,4 @@ io_loop polling {
 }
 ```
 
+### Core Functions
