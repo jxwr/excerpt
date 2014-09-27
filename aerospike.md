@@ -13,4 +13,9 @@
 - To avoid single core implementations and NUMA overhead, the balanced approach is to build a system that scales by grouping multiple threads per CPU socket instead of per core with a single threaded system. ?
 - 同集群内是同步冗余，跨机房是异步冗余
 - stack based allocator
+- 文件夹
+  - as server
+  - cf 基础库
+  - ai 索引
+
 

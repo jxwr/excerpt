@@ -19,3 +19,14 @@
 * the keywords Example and Theorem (and a few others, including Lemma, Fact, and Remark) mean exactly the same thing to Coq.
 * rewrite后面的箭头表示从哪向哪rewrite
 
+* Curry-Howard同构，lambda演算与proof演算可互相表示
+* 最小命题逻辑：仅有命题变量和蕴含关系，如(P->Q)->(Q->R)->P->R
+* 命题变量作为类型，若可以可以构造出一个函数定义，其返回值的类型为需要求得的Goal命题变量，则证明了该命题
+* Modus Ponens (implication elimimination)
+* 很多时候，逻辑书本上给出一个定义，为某个阶段的结果起一个名字，但却没有给出这个定义之所以抽取出来作为定义的重要意义
+* 依赖类型：函数作用于适当的表达式的结果
+* 依赖积： forall v:A, B  这是个类型， 其中v相当于一个类型变量，该类型在使用时需要首先指定第一个参数
+
+
+
+
