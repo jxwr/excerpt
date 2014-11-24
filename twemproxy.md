@@ -1,0 +1,8 @@
+
+- Client接收到的消息会先放入c_conn的inq，当该msg转发到server之后，会放入outq里维护，并且该请求会放入s_conn的inq里，当s_conn将该msg发送出去后，会将消息放到outq里。
+- rsp_recv_forward在rsp请求消息接收到之后，s_conn的outq的pmsg是req
+- 接收到消息后，将pmsg从outq出队，设置为msg的peer，向client端forward
+- rsp_forward由rsp_recv_done调用，也就是说，recv_done()返回时，就已经完成的到Client的路由，下一步就是实际发送数据到Client
+- rsp_recv完成server数据接收以及转发，rsp_send负责将数据发送给client
+- imsg_q和omsg_q都是req，没有所谓rsp的msg_q
+- 每个msg实际上会同时位于client和server两个队列里
